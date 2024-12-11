@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraries with Period Products</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Libraries with Period Products</h1>
+    </header>
+    <nav>
+        <a href="/" class="button">Home</a>
+        <a href="/add_library" class="button">Register a Library</a>
+    </nav>
+    <main>
+        <form action="/libraries" method="GET" class="form wider-form">
+            <label for="zip_code">Filter by Zip Code:</label>
+            <input type="text" id="zip_code" name="zip_code" placeholder="Enter Zip Code">
+            <button type="submit" class="submit-button">Search</button>
+        </form>
+        <ul class="library-list">
+            {% for library in libraries %}
+            <li class="library-item">
+                <strong>{{ library.name }}</strong><br>
+                Address: {{ library.address }}<br>
+                Zip Code: {{ library.zip_code }}<br>
+                Hours Open: {{ library.hours_open }}<br>
+                Period Products: {{ 'Yes' if library.has_period_products else 'No' }}
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Library Period Products Map</p>
+    </footer>
+</body>
+</html>
+

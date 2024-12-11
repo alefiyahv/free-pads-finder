@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #34495e;
+}
+
+nav .button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+nav .button:hover {
+    background-color: #2980b9;
+}
+
+main {
+    padding: 30px 15%;
+}
+
+.welcome-container {
+    text-align: center;
+}
+
+.welcome-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.welcome-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.home-image {
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wider-form input,
+.wider-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.library-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.library-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
